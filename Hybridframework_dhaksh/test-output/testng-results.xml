@@ -1,37 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-15T10:41:00 EDT" name="Default suite" finished-at="2022-03-15T10:42:02 EDT" duration-ms="61560">
+  <suite started-at="2022-03-23T14:07:54 EDT" name="Default suite" finished-at="2022-03-23T14:10:36 EDT" duration-ms="162552">
     <groups>
     </groups>
-    <test started-at="2022-03-15T10:41:00 EDT" name="Default test" finished-at="2022-03-15T10:42:02 EDT" duration-ms="61560">
-      <class name="com.testscenarios.JRI_TS001_Createuseraccount">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.testscenarios.JRI_TS001_Createuseraccount@2a265ea9]" started-at="2022-03-15T10:41:01 EDT" name="beforeClass" finished-at="2022-03-15T10:41:07 EDT" duration-ms="6828" status="PASS">
+    <test started-at="2022-03-23T14:07:54 EDT" name="Default test" finished-at="2022-03-23T14:10:36 EDT" duration-ms="162552">
+      <class name="com.testscenarios.JRI_TS002_Signin">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.testscenarios.JRI_TS002_Signin@6892b3b6]" started-at="2022-03-23T14:07:54 EDT" name="beforeClass" finished-at="2022-03-23T14:07:56 EDT" duration-ms="2575" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="TC_004()[pri:0, instance:com.testscenarios.JRI_TS001_Createuseraccount@2a265ea9]" started-at="2022-03-15T10:41:07 EDT" name="TC_004" finished-at="2022-03-15T10:41:46 EDT" duration-ms="39097" status="PASS">
+        <test-method signature="TC_006()[pri:0, instance:com.testscenarios.JRI_TS002_Signin@6892b3b6]" started-at="2022-03-23T14:07:56 EDT" name="TC_006" finished-at="2022-03-23T14:07:56 EDT" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_004 -->
-        <test-method is-config="true" signature="screenshot()[pri:0, instance:com.testscenarios.JRI_TS001_Createuseraccount@2a265ea9]" started-at="2022-03-15T10:41:47 EDT" name="screenshot" finished-at="2022-03-15T10:41:47 EDT" duration-ms="869" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshot -->
-        <test-method signature="TC_005()[pri:0, instance:com.testscenarios.JRI_TS001_Createuseraccount@2a265ea9]" started-at="2022-03-15T10:41:47 EDT" name="TC_005" finished-at="2022-03-15T10:42:01 EDT" duration-ms="13170" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_005 -->
-        <test-method is-config="true" signature="screenshot()[pri:0, instance:com.testscenarios.JRI_TS001_Createuseraccount@2a265ea9]" started-at="2022-03-15T10:42:01 EDT" name="screenshot" finished-at="2022-03-15T10:42:02 EDT" duration-ms="1146" status="PASS">
+        </test-method> <!-- TC_006 -->
+        <test-method is-config="true" signature="screenshot()[pri:0, instance:com.testscenarios.JRI_TS002_Signin@6892b3b6]" started-at="2022-03-23T14:07:56 EDT" name="screenshot" finished-at="2022-03-23T14:07:57 EDT" duration-ms="464" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshot -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.testscenarios.JRI_TS001_Createuseraccount@2a265ea9]" started-at="2022-03-15T10:42:02 EDT" name="afterClass" finished-at="2022-03-15T10:42:02 EDT" duration-ms="367" status="PASS">
+        <test-method signature="TC_007_008()[pri:0, instance:com.testscenarios.JRI_TS002_Signin@6892b3b6]" started-at="2022-03-23T14:07:57 EDT" name="TC_007_008" finished-at="2022-03-23T14:08:14 EDT" duration-ms="16732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_007_008 -->
+        <test-method is-config="true" signature="screenshot()[pri:0, instance:com.testscenarios.JRI_TS002_Signin@6892b3b6]" started-at="2022-03-23T14:08:14 EDT" name="screenshot" finished-at="2022-03-23T14:08:15 EDT" duration-ms="1053" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+        <test-method signature="TC_009()[pri:0, instance:com.testscenarios.JRI_TS002_Signin@6892b3b6]" started-at="2022-03-23T14:08:15 EDT" name="TC_009" finished-at="2022-03-23T14:08:41 EDT" duration-ms="25828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_009 -->
+        <test-method is-config="true" signature="screenshot()[pri:0, instance:com.testscenarios.JRI_TS002_Signin@6892b3b6]" started-at="2022-03-23T14:08:41 EDT" name="screenshot" finished-at="2022-03-23T14:08:42 EDT" duration-ms="1000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+        <test-method signature="TC_010()[pri:0, instance:com.testscenarios.JRI_TS002_Signin@6892b3b6]" started-at="2022-03-23T14:08:42 EDT" name="TC_010" finished-at="2022-03-23T14:10:34 EDT" duration-ms="112042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_010 -->
+        <test-method is-config="true" signature="screenshot()[pri:0, instance:com.testscenarios.JRI_TS002_Signin@6892b3b6]" started-at="2022-03-23T14:10:34 EDT" name="screenshot" finished-at="2022-03-23T14:10:36 EDT" duration-ms="2407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.testscenarios.JRI_TS002_Signin@6892b3b6]" started-at="2022-03-23T14:10:36 EDT" name="afterClass" finished-at="2022-03-23T14:10:36 EDT" duration-ms="369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.testscenarios.JRI_TS001_Createuseraccount -->
+      </class> <!-- com.testscenarios.JRI_TS002_Signin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

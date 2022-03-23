@@ -10,8 +10,10 @@ import org.testng.annotations.BeforeClass;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
+import java.util.Scanner;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -28,6 +30,37 @@ public class JRI_TS001_Createuseraccount extends GenericWrapper {
 		chromeBrowserLaunch();
 
 	}
+	
+	@Test
+	public void TC_001() throws Exception
+	
+	{
+		FileInputStream file = new FileInputStream("./src/test/resources/testdata/input.properties");	
+		prop.load(file);
+		
+		driver.get(prop.getProperty("JRI_Signin_Url"));
+		
+	}
+	
+	
+	@Test
+	public void TC_002() throws Exception
+	{
+		FileInputStream file = new FileInputStream("./src/test/resources/testdata/input.properties");	
+		prop.load(file);
+		
+		driver.get(prop.getProperty("JRI_Signin_Url"));
+		clickByAnyLocator(LOC.CreateNewAccount_Signup_Button);
+	}
+
+	@Test
+	public void TC_003() throws Exception
+	{
+		FileInputStream file = new FileInputStream("./src/test/resources/testdata/input.properties");	
+		prop.load(file);
+		
+		driver.get(prop.getProperty("JRI_Signup_Url"));
+	}
 
 	@Test
 	public void TC_004() throws Exception {
@@ -39,31 +72,22 @@ public class JRI_TS001_Createuseraccount extends GenericWrapper {
 		driver.get(prop.getProperty("JRI_Signup_Url"));
 		// For Name Textbox
 		clickByAnyLocator(LOC.CreateNewAccount_CreateAccount_Button);
-		//Thread.sleep(5000);
 		String textname = driver.findElement(LOC.CreateNewAccount_Name_Errormessage).getText();
 		System.out.println(textname);
 		sendkeysByAnyLocator(LOC.CreateNewAccount_Name_EditBox, prop.getProperty("Name_InvalidInput"));
 		clickByAnyLocator(LOC.CreateNewAccount_CreateAccount_Button);
-		//Thread.sleep(5000);
-		// String msg = driver.findElement(LOC.CreateNewAccount_Name_EditBox).getText();
-		// System.out.println(msg);
 		String err = driver.findElement(LOC.CreateNewAccount_Name_Errormessage).getText();
 		System.out.println(err);
-		//Thread.sleep(5000);
 		sendkeysByAnyLocator(LOC.CreateNewAccount_Name_EditBox, prop.getProperty("Name_ValidInput"));
 
 		// For Mobile number Textbox
 		clickByAnyLocator(LOC.CreateNewAccount_CreateAccount_Button);
-		//Thread.sleep(5000);
 		String mobile = driver.findElement(LOC.CreateNewAccount_Mobilenumber_Errormessage).getText();
 		System.out.println(mobile);
 		sendkeysByAnyLocator(LOC.CreateNewAccount_Mobilenumber_Editbox, prop.getProperty("Mobile_InvalidInput"));
 		clickByAnyLocator(LOC.CreateNewAccount_CreateAccount_Button);
-		//Thread.sleep(5000);
-
 		String errmobile = driver.findElement(LOC.CreateNewAccount_Mobilenumber_Errormessage).getText();
 		System.out.println(errmobile);
-		//Thread.sleep(5000);
 		sendkeysByAnyLocator(LOC.CreateNewAccount_Mobilenumber_Editbox, prop.getProperty("Mobile_ValidInput"));
 
 		// For Email Textbox
@@ -87,10 +111,8 @@ public class JRI_TS001_Createuseraccount extends GenericWrapper {
 		System.out.println(pswd);
 		sendkeysByAnyLocator(LOC.CreateNewAccount_Password_EditBox, prop.getProperty("Password_InvalidInput"));
 		clickByAnyLocator(LOC.CreateNewAccount_CreateAccount_Button);
-		//Thread.sleep(5000);		
 		String errpwd = driver.findElement(LOC.CreateNewAccount_Password_Errormessage).getText();
 		System.out.println(errpwd);
-		//Thread.sleep(5000);
 		sendkeysByAnyLocator(LOC.CreateNewAccount_Password_EditBox, prop.getProperty("Password_ValidInput"));
 		
 		
@@ -119,11 +141,16 @@ public class JRI_TS001_Createuseraccount extends GenericWrapper {
 		prop.load(file);
 		
 		
+	
+		
 		sendkeysByAnyLocator(LOC.CreateNewAccount_Name_EditBox, prop.getProperty("Name_ValidInput"));
 		sendkeysByAnyLocator(LOC.CreateNewAccount_Mobilenumber_Editbox, prop.getProperty("Mobile_ValidInput"));
 		sendkeysByAnyLocator(LOC.CreateNewAccount_Email_EditBox, prop.getProperty("Email_ValidInput"));
 		sendkeysByAnyLocator(LOC.CreateNewAccount_Password_EditBox, prop.getProperty("Password_ValidInput"));
 		clickByAnyLocator(LOC.CreateNewAccount_Agreeterms_checkbox);
+		
+		// Check the JRI home page will display without errors
+			
 	
 		clickByAnyLocator(LOC.CreateNewAccount_CreateAccount_Button);
 		

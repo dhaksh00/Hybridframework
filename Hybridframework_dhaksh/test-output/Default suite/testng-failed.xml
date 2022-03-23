@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testscenarios.JRI_TS001_Createuseraccount">
+      <class name="com.testscenarios.JRI_TS002_Signin">
         <methods>
-          <include name="TC_004"/>
           <include name="afterClass"/>
-          <include name="beforeClass"/>
+          <include name="TC_009"/>
           <include name="screenshot"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.testscenarios.JRI_TS001_Createuseraccount -->
+      </class> <!-- com.testscenarios.JRI_TS002_Signin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
